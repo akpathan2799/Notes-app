@@ -115,7 +115,7 @@ function deleteNote(index) {
      deleteNotes.push(note[0]);
    console.log(deleteNotes);
 
-    // localStorage.setItem('archiveNotes', JSON.stringify(availabelNotes))
-    // localStorage.setItem('deleteNotes', JSON.stringify(deleteNotes))
-    // displayNotes(searchInput.value.toLowerCase());
+    localStorage.setItem('archiveNotes', JSON.stringify(availabelNotes))
+    localStorage.setItem('deleteNotes', JSON.stringify(deleteNotes))
+    displayNotes(searchInput.value.toLowerCase());
 }
