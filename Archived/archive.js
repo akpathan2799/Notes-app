@@ -1,3 +1,4 @@
+let deletedNotes = [];
 const hamburgerMenu = document.querySelector('#hamburger-menu');
 const mobileDisplay = document.querySelector('.mobile-menu');
 hamburgerMenu.addEventListener('click',()=>{
@@ -107,9 +108,12 @@ function deleteNote(index) {
     const availabelNotes = JSON.parse(localStorage.getItem('archiveNotes'));
     const deleteNotes = JSON.parse(localStorage.getItem('deleteNotes'));
     console.log(deleteNotes);
+    if(deleteNotes === null){
+        console.log('null value');
+    }
 
     const note = availabelNotes.splice(index, 1);
-    console.log(note);
+    console.log(note[0]);
    deleteNotes.push(note[0]);
 
     localStorage.setItem('archiveNotes', JSON.stringify(availabelNotes))
