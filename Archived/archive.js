@@ -113,7 +113,7 @@ function deleteNote(index) {
     const note = availabelNotes.splice(index, 1);
     console.log(deleteNotes);
      deleteNotes.push(note[0]);
-   
+   console.log(deleteNotes);
 
     // localStorage.setItem('archiveNotes', JSON.stringify(availabelNotes))
     // localStorage.setItem('deleteNotes', JSON.stringify(deleteNotes))
