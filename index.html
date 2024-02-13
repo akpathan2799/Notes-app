@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="shortcut icon" href="./Assets/icons8-notes-96.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar Starts here -->
+
+    <header>
+
+        <div class="nav-wrapper">
+
+            <a href="#" class="logo-heading">Notes App</a>
+
+            <nav>
+                <ul class="navigation-list">
+                    <li class="list-item"><a class = "navigation-tag"href="../index.html">Home</a></li>
+                    <li class="list-item"><a class = "navigation-tag"href="./Archived/archive.html">Archived</a></li>
+                    <li class="list-item"><a class = "navigation-tag"href="./Deleted/delete.html">Deleted</a></li>
+                </ul>
+
+            </nav>
+            <svg id="hamburger-menu" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+
+              
+            </div>
+            <div class="mobile-menu" style="display: none;">
+              <a class="mobile-menu-item" href="../index.html">Home</a>
+              <a class="mobile-menu-item" href="./Archived/archive.html">Archived</a>
+              <a class="mobile-menu-item" href="./Deleted/delete.html">Deleted</a>
+
+            </div>
+
+    </header>
+
+    <!-- Navigation Bar ends here -->
+
+
+    <!-- Main container starts here -->
+
+        <div class="main">
+
+            <div class="container">
+
+                <!-- Search-bar starts here -->
+
+
+                <div class="search-bar">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ffffff" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                      </svg>
+                      <input type="text" name="" id="search-input" placeholder="Search Notes Title Here...">
+                </div>
+
+                <!-- search bar ends here -->
+
+                <!-- Add note button starts here -->
+
+                <div id="add-note-button" >
+                   
+                      <h4 class="add-note-button-heading">Add Note</h4>
+                    </div>
+                <!-- Add note button ends here -->
+
+                <!-- heading for create new nots -->
+
+                <h2 class="create-new-notes-heading">Create New Notes</h2>
+
+                <!-- Notes showcase div starts here -->
+
+                <div class="showcase-notes">
+
+                 
+                    
+
+
+                </div>
+                <!-- Notes showcase div starts here  -->
+            </div>
+
+            <div class="add-note-popup">
+
+                <div class="add-note-container">
+                    <h2 class="add-note-heading">Add New Note</h2>
+
+                    <div class="title-input">
+                        <p class="title-input-heading">Title</p>
+                        <div class="input-wrapper">
+
+                            <input type="text" name="" id="title" class="input-text-field" placeholder="Enter Notes Title" required >
+                        </div>
+                    </div>
+
+                    <div class="description-input">
+                        <p class="title-input-heading">Title</p>
+                        <div class="input-wrapper">
+
+                            <textarea name="" id="description" class="input-text-field" placeholder="Enter Notes Description" cols="30" rows="10" required></textarea>
+                        </div>
+
+                    </div>
+
+                    <button id="save-notes">Save Note</button>
+                </div>
+
+                <div class="close-button">X</div>
+
+            </div>
+            
+        
+
+            
+        </div>
+    <!-- Main container ends here -->
+
+    
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>

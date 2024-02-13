@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes App</title>
+    <link rel="shortcut icon" href="../Assets/icons8-notes-96.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-wrapper">
+            <a href="#" class="logo-heading">Notes App</a>
+
+            <nav>
+                <ul class="navigation-list">
+                    <li class="list-item">
+                        <a class="navigation-tag" href="../index.html">Home</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="navigation-tag" href="../Archived/archive.html">Archived</a>
+                    </li>
+                    <li class="list-item">
+                        <a class="navigation-tag" href="./delete.html">Deleted</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <svg id="hamburger-menu" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+
+              
+            </div>
+            <div class="mobile-menu" style="display: none;">
+              <a class="mobile-menu-item" href="../index.html">Home</a>
+              <a class="mobile-menu-item" href="../Archived/archive.html">Archived</a>
+              <a class="mobile-menu-item" href="./delete.html">Deleted</a>
+
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <div class="search-bar">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#ffffff" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+                <input type="text" name="" id="search-input" placeholder="Search Notes Title Here..." />
+            </div>
+            <h2 class="create-new-notes-heading">Deleted Notes</h2>
+            <div class="showcase-notes"></div>
+        </div>
+    </div>
+
+    
+
+    <script src="./delete.js"></script>
+</body>
+</html>
