@@ -20,6 +20,7 @@ searchInput.addEventListener('keyup', (e) => {
 // Display Notes Functionality
 function displayNotes(string) {
 
+    console.log('called');
 
     const availabelNotes = JSON.parse(localStorage.getItem('archiveNotes'));
     if (availabelNotes === null) {
@@ -106,11 +107,11 @@ function deleteNote(index) {
     const availabelNotes = JSON.parse(localStorage.getItem('archiveNotes'));
     const deletedNotes = JSON.parse(localStorage.getItem('deleteNotes'))
     const temp = availabelNotes[index];
-    const note = availabelNotes.splice(index, 1);
-  
+    let note = availabelNotes.splice(index, 1);
+    console.log(availabelNotes);
     deletedNotes.push(temp);
     localStorage.setItem("deleteNotes", JSON.stringify(deletedNotes));
-    localStorage.setItem("totalNotes", JSON.stringify(availabelNotes));
+    localStorage.setItem("archiveNotes", JSON.stringify(availabelNotes));
     note = null;
-    displayNotes(searchInput.value.toLowerCase());
+    displayNotes('');
 }
