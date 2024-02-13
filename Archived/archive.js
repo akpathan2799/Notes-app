@@ -106,8 +106,9 @@ function deleteNote(index) {
     const availabelNotes = JSON.parse(localStorage.getItem('archiveNotes'));
     const deletedNotes = JSON.parse(localStorage.getItem('deleteNotes'))
     const note = availabelNotes.splice(index, 1);
-    deletedNotes.push(note[0]);
-    localStorage.setItem("deleteNotes", JSON.stringify(deletedNotes));
-    localStorage.setItem("totalNotes", JSON.stringify(availabelNotes));
-    displayNotes(searchInput.value.toLowerCase());
+    console.log(note[0]);
+    // deletedNotes.push(note[0]);
+    // localStorage.setItem("deleteNotes", JSON.stringify(deletedNotes));
+    // localStorage.setItem("totalNotes", JSON.stringify(availabelNotes));
+    // displayNotes(searchInput.value.toLowerCase());
 }
