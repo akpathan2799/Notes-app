@@ -113,6 +113,6 @@ function deleteNote(index) {
    deleteNotes.push(note[0]);
 
     localStorage.setItem('archiveNotes', JSON.stringify(availabelNotes))
-    localStorage.setItem('deleteNotes', JSON.stringify(deleteNotes));
+    localStorage.setItem('deleteNotes', JSON.stringify(deleteNotes))
     displayNotes(searchInput.value.toLowerCase());
 }
