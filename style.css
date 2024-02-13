@@ -398,5 +398,10 @@ border-radius: 7px;
         justify-content: center;
         text-align: center;
     }
+    .add-note-container{
+        position: relative;
+            width: 90%;
+           
+        }
 }
 
